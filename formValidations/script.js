@@ -78,7 +78,7 @@ document.getElementById("form").addEventListener("submit", function(event) {
     console.log(values);
     const allValid = Object.values(values).every(value => value === true);
     if (!allValid) {
-      console.log("validation failed");
+      // console.log("validation failed");
       return;
     } else {
         localStorage.setItem('formValues', JSON.stringify(values));
